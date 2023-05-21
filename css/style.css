@@ -1,6 +1,6 @@
-body, h1, h2, ul, li, p, dt, dl, dd {
+body, h1, h2, ul, li, p, dd, dt, dl {
   margin: 0px;
-  padding: 8px;
+  padding: 0px;
 }
 
 img {
@@ -17,7 +17,7 @@ body {
   color: #222;
   -webkit-font-smoothing: antialiased;
   display: grid;
-  grid-template-columns: 1fr 120px minmax(300px 800px) 1fr;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
 .menu {
@@ -154,6 +154,7 @@ body {
 
 .data li {
   font-family: Helvetica, Arial;
+  margin-top: 1rem;
 }
 
 .data li::before {
@@ -181,7 +182,7 @@ body {
   body {
     grid-template-columns: 1fr;
   }
-  .menu .grid-section .copy {
+  .menu, .grid-section, .copy {
     grid-column: 1;
   }
   .grid-section {
@@ -191,18 +192,17 @@ body {
   .garden-list {
     grid-column: 1;
   }
-  .faq-list .data .map {
+  .faq-list, .data, .map {
     grid-column: 1 / 3;
-
   }
-  .grid-section {
+  .grid-section h1 {
     font-size: 3rem;
   }
   .menu {
     margin-top: 0px;
   }
   .copy {
-    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
