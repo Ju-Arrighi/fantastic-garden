@@ -18,3 +18,20 @@ imgs.forEach( ( )=> {
 });
 
 imgs.forEach(() => i++);
+
+const word = 'Juliana';
+console.log(word.first)
+if (word.charAt === 'B') {
+  console.log(true);
+} else {
+  console.log(false);
+}
+const names = ['Juliana', 'Francisco', 'Michel', 'Luiz', 'Braulio']
+const namesStartB = []
+names.forEach((item) => {
+  if (item.charAt === 'B') {
+    console.log(namesStartB.push(item));
+  } else {
+    console.log(false);
+  }
+  })
